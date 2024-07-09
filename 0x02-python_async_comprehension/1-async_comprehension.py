@@ -14,5 +14,4 @@ async def async_comprehension() -> List[float]:
     """
     collects the 10 valuse
     """
-    random_float = [x for x in async_generator()]
-    return random_float
+    return [number async for number in async_generator()]
